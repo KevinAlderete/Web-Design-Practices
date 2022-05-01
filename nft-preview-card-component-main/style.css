@@ -1,0 +1,153 @@
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    width: 270px;
+    height: 450px;
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+                0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.container .img {
+    margin: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .img .cube {
+    position: absolute;
+    width: 236px;
+    height: 236px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.container .img .eye-cube{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 236px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .img:hover > .eye-cube {
+    opacity: 1;
+}
+
+.container .text {
+    margin: 0 17px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .text h2 {
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.container .text h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .text p {
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+    margin-top: 0;
+    text-align: left;
+}
+
+.container .eth {
+    display: flex;
+    justify-content: start;
+    padding: 0 17px;
+}
+
+.container .eth img {
+    width: fit-content;
+    height: fit-content;
+    justify-content: start;
+    padding-right: 5px;
+}
+
+.container .eth h3 {
+    font-size: 15px;
+    color: hsl(178, 100%, 50%);
+    margin-top: 0;
+}
+
+.container .eth .time {
+    display: flex;
+    justify-content: end;
+    margin-left: 60px;
+}
+
+.container .eth .time img {
+    width: fit-content;
+    height: fit-content;
+    justify-content: start;
+    padding-top: 1px;
+}
+
+.container .eth .time p {
+    margin: 0;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+.container hr {
+    width: 230px;
+    border-color: hsl(215, 32%, 27%);
+    margin: auto;
+}
+
+.container .info {
+    display: flex;
+    justify-content: start;
+}
+
+.container .info img {
+    object-fit: contain;
+    height: 28px;
+    border: solid 1.5px;
+    border-radius: 50px;
+    border-color: hsl(0, 0%, 100%);
+    margin: 10px 13px 10px 17px;
+}
+
+.container .info p {
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+    text-align: justify;
+}
+
+.container .info span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.container .info span:hover {
+    color: hsl(178, 100%, 50%);
+}
