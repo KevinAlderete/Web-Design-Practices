@@ -1,0 +1,140 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.back-mobile{
+    position: absolute;
+    justify-content: start;
+    display: none;
+    width: 100%;
+}
+
+.back-desktop {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    position: relative;
+    background-color: #fff;
+    width: 20rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.container h1 {
+    color: hsl(223, 47%, 23%);
+}
+
+.container p {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.container .container-plan {
+    background-color: hsl(225, 100%, 98%);
+    width: 17rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.container .container-plan img {
+    width: 3rem;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+
+.container .container-plan h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: hsl(223, 47%, 23%);
+    width: 6rem;
+    padding-left: 1rem;
+}
+
+.container .container-plan span {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.container .container-plan p {
+    color: hsl(245, 75%, 52%);
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.container .container-plan p:hover {
+    text-decoration: none;
+    color: hsl(245, 42%, 59%);
+}
+
+.container .proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border-style: none;
+    border-radius: 0.8rem;
+    font-weight: 700;
+    width: 17rem;
+    height: 3.3rem;
+    box-shadow: 0 1.3rem 1rem 0 hsl(245, 75%, 52%, 0.18);
+    cursor: pointer;
+}
+
+.container .proceed:hover {
+    filter: opacity(0.6);
+}
+
+.container .cancel {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    border-style: none;
+    font-weight: 700;
+    width: 17rem;
+    height: 3.3rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.container .cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+ @media screen and (min-width:375px) and (max-width:1440px) {
+     .back-desktop {
+         display: flex;
+     }
+ }
+
+ @media screen and (max-width:375px) {
+     .back-mobile {
+         display: flex;
+     }
+ }
