@@ -1,0 +1,138 @@
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    Font-size: 15px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 5rem 0;
+}
+
+.container__card-one {
+    background-color: hsl(31, 77%, 52%);
+    width: 20rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__one-img {
+    padding: 3rem 3rem 0 3rem;
+}
+
+.card__one-title {
+    padding: 2rem 3rem 0 3rem;
+    margin: 0;
+    color: hsl(0, 0%, 95%);
+    font-size: 3rem;
+}
+
+.card__one-paragraph {
+    padding: 2rem 3rem 0 3rem;
+    margin: 0;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__one-button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1.5rem 3rem 3rem 3rem;
+}
+
+.container__card-two {
+    background-color: hsl(184, 100%, 22%);
+    width: 20rem;
+}
+
+.card__two-img {
+    padding: 3rem 3rem 0 3rem;
+}
+
+.card__two-title {
+    padding: 2rem 3rem 0 3rem;
+    margin: 0;
+    color: hsl(0, 0%, 95%);
+    font-size: 3rem;
+}
+
+.card__two-paragraph {
+    padding: 2rem 3rem 0 3rem;
+    margin: 0;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__two-button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1.5rem 3rem 3rem 3rem;
+}
+
+.container__card-three {
+    background-color: hsl(179, 100%, 13%);
+    width: 20rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card__three-img {
+    padding: 3rem 3rem 0 3rem;
+}
+
+.card__three-title {
+    padding: 2rem 3rem 0 3rem;
+    margin: 0;
+    color: hsl(0, 0%, 95%);
+    font-size: 3rem;
+}
+
+.card__three-paragraph {
+    padding: 2rem 3rem 0 3rem;
+    margin: 0;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__three-button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1.5rem 3rem 3rem 3rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    
+    .container__card-one {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .container__card-three {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .container button{
+        margin: 6rem 3rem 3rem 3rem;
+    }
+
+}
