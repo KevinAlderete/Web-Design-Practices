@@ -1,0 +1,214 @@
+html {
+    background-image: url(images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left 2vw;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right 1vw top 68vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container__title {
+    color: hsl(300, 43%, 22%);
+    font-size: 2.8rem;
+    line-height: 2.2rem;
+}
+
+.container__paragraph {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size:1.2rem;
+}
+
+.container__rate {
+    width: 100%;
+}
+
+.rate__star {
+    background-color: hsl(300, 24%, 96%);
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.stars__position img {
+    margin: 0.2rem;
+    width: 1.2rem;
+} 
+
+.rate__text {
+    font-size: 1.2rem;
+    color: hsl(300, 43%, 22%);
+    margin: 0.6rem 0 0 0;
+}
+
+.cards {
+    background-color: hsl(300, 43%, 22%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    height: max-content;
+}
+
+.cards__info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cards__photo {
+    height: 2.5rem;
+    border-radius: 3rem;
+}
+
+.cards__name {
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    margin: 0 1rem;
+}
+
+.name__span {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.cards__paragraph {
+    color: hsl(0, 0%, 100%);
+    text-align: start;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 1.5rem 0 0 0;
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        background-image: url(images/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left 4vw;
+    }
+
+    body {
+        background-image: url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left 28vw top 20vh;
+        display: grid;
+        place-content: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: "info rate"
+                                "cards cards";
+
+    }
+
+    .container__info {
+        grid-area: info;
+        justify-content: start;
+        text-align: start;
+    }
+    
+    .container__title {
+        font-size: 3.7rem;
+        width: 25rem;
+        margin-bottom: 1rem;
+        line-height: 3rem;
+    }
+
+    .container__paragraph {
+        width: 30rem;
+        margin-bottom: 4rem;
+    }
+
+    .container__rate {
+        grid-area: rate;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__cards {
+        grid-area: cards;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rate__star {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        width: 32rem;
+        height: 3.8rem;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    .stars__position {
+        margin: 0 1.8rem 0 1.8rem;
+    }
+
+    .rate__text {
+        margin: 0;
+    }
+
+    .rate__position-one {
+        margin-left: 7rem;
+    }
+
+    .rate__position-two {
+        margin-left: 10rem;
+    }
+
+    .rate__position-three {
+        margin-left: 13rem;
+    }
+
+    .cards {
+        margin-left: 0;
+        width: 19.2rem;
+        height: 10rem;
+    }
+
+    .cards__paragraph {
+        font-size: 1.1rem;
+    }
+
+    .cards__position-one {
+        margin-top: 2rem;
+    }
+
+    .cards__position-two {
+        margin-top: 3rem;
+    }
+}
