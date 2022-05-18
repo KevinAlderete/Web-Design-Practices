@@ -2,7 +2,6 @@ html {
     background-image: url(images/bg-pattern-top-mobile.svg);
     background-repeat: no-repeat;
     background-position: left 2vw;
-    overflow: hidden;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
     background-image: url(images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
     background-position: right 1vw top 68vh;
-    overflow: hidden;
 }
 
 .container {
