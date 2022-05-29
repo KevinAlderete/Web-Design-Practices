@@ -11,3 +11,4 @@
 - [3-column-preview-card-component-main](https://kevinalderete.github.io/Web-Design-Practices/3-column-preview-card-component-main/)
 - [profile-card-component-main](https://kevinalderete.github.io/Web-Design-Practices/profile-card-component-main/)
 - [social-proof-section-master](https://kevinalderete.github.io/Web-Design-Practices/social-proof-section-master/)
+- [single-price-grid-component-master](https://kevinalderete.github.io/Web-Design-Practices/single-price-grid-component-master/)
