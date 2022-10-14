@@ -14,3 +14,6 @@
 - [single-price-grid-component-master](https://kevinalderete.github.io/Web-Design-Practices/single-price-grid-component-master/)
 - [huddle-landing-page-with-single-introductory-section-master](https://kevinalderete.github.io/Web-Design-Practices/huddle-landing-page-with-single-introductory-section-master/)
 - [four-card-feature-section-master](https://kevinalderete.github.io/Web-Design-Practices/four-card-feature-section-master/)
+- [product-preview-card-component-main](https://kevinalderete.github.io/Web-Design-Practices/product-preview-card-component-main/)
+
+
