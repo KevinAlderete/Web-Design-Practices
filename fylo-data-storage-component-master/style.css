@@ -1,0 +1,196 @@
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14x;
+    background-image: url(images/bg-mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.card__top {
+    background-color: var(--Dark-Blue);
+    border-radius: 0.8rem 5rem 0.8rem 0.8rem;
+    width: 20.5rem;
+}
+
+.logo {
+    margin: 2rem 2rem 2rem 2.5rem;
+}
+
+.icon {
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 0.7rem;
+}
+
+.icon__one {
+    margin: 0 0 2.3rem 2.5rem;
+    padding: 0.8rem;
+}
+
+.icon__two {
+    margin: 0 0 2.3rem 0.8rem;
+    padding: 0.9rem 0.75rem 0.9rem 0.75rem;
+}
+
+.icon__three {
+    margin: 0 0 2.3rem 0.8rem;
+    padding: 1rem 0.75rem 1rem 0.75rem;
+}
+
+.card__bottom {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue);
+    border-radius: 0.8rem;
+    width: 20.5rem;
+}
+
+.card__paragraph {
+    padding-top: 1rem;
+    color: var(--Grayish-Blue);
+    font-size: 0.9rem;
+}
+
+.card__span {
+    color: var(--Pale-Blue);
+    font-weight: 700;
+}
+
+.card__bar {
+    background-color: hsl(229, 57%, 11%, 0.5);
+    width: 16.5rem;
+    padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+    border-radius: 1rem;
+}
+
+.bar {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 11.5rem;
+    padding: 0.1rem;
+    border-radius: 1rem;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: row;
+    width: 16rem;
+    justify-content: space-between;
+    color: var(--Pale-Blue);
+    font-weight: 700;
+    padding-bottom: 2.5rem;
+    font-size: 0.8rem;
+}
+
+.info {
+    margin-top: 0.4rem;
+}
+
+.point {
+    background-color: white;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 100%;
+    margin-left: 10.8rem;
+}
+
+.hero {
+    background-color: white;
+    border-radius: 0.8rem;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    position: absolute;
+    margin-top: 9.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero__title {
+    font-size: 2.6rem;
+    margin: 0;
+}
+
+.hero__span {
+    font-size: 0.8rem;
+    color: var(--Grayish-Blue);
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
+
+.span {
+    position: absolute;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: var(--Very-Dark-Blue);
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: bottom 0rem right 0rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 60rem;
+        justify-content: space-between;
+    }
+
+    .card__bottom {
+        width:37.5rem;
+        align-items: flex-start;
+        margin-top: 3rem;
+        height: 10rem;
+    }
+
+    .card__paragraph {
+        margin-left: 2.5rem;
+        margin-top: 0;
+
+    }
+
+    .card__bar {
+        margin-left: 2.5rem;
+        width: 32rem;
+    }
+
+    .card__info {
+        margin-left: 2.5rem;
+        width: 32rem;
+        padding-bottom: 0;
+    }
+
+    .hero {
+        margin: 0 0 11rem 23rem;
+        border-radius: 0.8rem 0.8rem 0 0.8rem;
+    }
+
+    .span {
+        margin: 3.8rem 0 0rem 8.4rem;
+        width: 0;
+        height: 0;
+        border-top: 23px solid #fff; 
+        border-left: 23px solid transparent;     
+    }
+    
+    .bar {
+        width: 24.5rem;
+    }
+
+    .point {
+        margin-left: 23.9rem;
+    }
+}
