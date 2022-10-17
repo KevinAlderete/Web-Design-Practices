@@ -1,0 +1,145 @@
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: var(--Light-grayish-blue);
+}
+
+.card__one {
+    background-color: var(--Moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem bottom 19.7rem;
+    margin: 0 1.5rem 0 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.card__two {
+    background-color: var(--Very-dark-grayish-blue);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.card__three {
+    background-color: var(--White);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.card__four {
+    background-color: var(--Very-dark-blackish-blue);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.card__five {
+    background-color: var(--White);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.card__profile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.5rem 0 0 2rem;
+}
+
+.card__img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+
+.card__name{
+    padding: 0 2rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--White);
+}
+
+.card__span{
+    color: hsl(217, 19%, 70%, 0.5);
+    font-size: 0.7rem;
+}
+
+.card__title {
+    padding: 0 2.7rem 0 2rem;
+    line-height: 1.6rem;
+    color: var(--White);
+    font-size: 1.2rem;
+}
+
+.card__paragraph {
+    padding: 0 3rem 2rem 2rem;
+    color: hsl(217, 19%, 70%);
+}
+
+.name-color {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.title-color {
+    color: var(--Very-dark-grayish-blue);
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        grid-template-areas: 'one one two five'
+                                'three four four five';
+        margin: 0 8rem 0 8rem;
+    }
+
+    .card__paragraph {
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card__one {
+        grid-area: one;
+        margin-right: 0.5rem;
+        width: 33rem;
+        background-position: right 5.5rem top 0;
+    }
+
+    .card__two {
+        grid-area: two;
+        margin-top: 0;
+        margin-right: 0.5rem;
+        width: 16rem;
+    }
+
+    .card__three {
+        grid-area: three;
+        margin-right: 0.5rem;
+        width: 16rem;
+    }
+
+    .card__four {
+        grid-area: four;
+        margin-right: 0.5rem;
+        width: 33rem;
+    }
+
+    .card__five {
+        grid-area: five;
+        margin-top: 0;
+        width: 16rem;
+    }
+}
